@@ -6,7 +6,7 @@
 var education = "no high school diploma";
 
 // set the value of this based on a person's education
-var salary;
+var salary = "";
 
 // your code goes here
 switch (education) {
@@ -24,3 +24,6 @@ switch (education) {
     break;
   case "a Doctoral degree": salary = 84396;
 }
+
+console.log("In 2015, a person with " + education
+    + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
